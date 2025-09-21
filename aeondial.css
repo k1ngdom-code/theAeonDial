@@ -917,7 +917,7 @@ transform: translate(-70px,30px);
   }
   
   #paragraphs{
-    transform: translate(50px, 150px);
+    transform: translate(65px, 150px);
     line-height: 10px;
     font-family: Lato;
  
@@ -933,7 +933,7 @@ transform: translate(-70px,30px);
     margin-left: 10px;
   }
   #firstwatch{
-    transform: translate(-70px, -90px) scale(0.65)
+    transform: translate(-80px, -90px) scale(0.65)
   }
   #paragraphs p2{
     width: 200px;
@@ -1379,10 +1379,13 @@ padding-bottom: 100px;
     margin-left:-40px
   }
     #paragraphs{
-    transform: translate(20px, 150px);
+    transform: translate(40px, 150px);
     line-height: 10px;
     font-family: Lato;
  
+  }
+   #firstwatch{
+    transform: translate(-110px, -90px) scale(0.65)
   }
 }
  /* .featurescard{
