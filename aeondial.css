@@ -1289,7 +1289,7 @@ padding-bottom: 100px;
   .stores p{
     font-size: 14px;
     transform:translate(10px);
-    width: 380px
+    width: 360px
   }
   
   .stores button{
@@ -1301,11 +1301,12 @@ padding-bottom: 100px;
   .stores #break{
     display: flex;
     position: absolute;
-    transform: translate(-35px,50px)
+    transform: translate(-40px,50px)
   }
   .reviews p{
     width:350px;
-    font-size:17px
+    font-size:17px;
+    color:red
   }
   .reviews h3{
   width:370px;
