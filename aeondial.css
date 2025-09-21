@@ -1195,7 +1195,7 @@ padding-bottom: 100px;
     height: 110vh
   }
   .footer .footerlogosection{
-  transform:translate(105px);
+  transform:translate(85px);
   }
   .footerlogosection p{
     font-size: 25px;
@@ -1203,20 +1203,20 @@ padding-bottom: 100px;
   .footerlogosection img{
     margin-top: -10px;
     scale: 0.90;
-    transform: translate(0px, -5px) scale(0.3);
+    transform: translate(0px, -9px) scale(0.3);
   }
   .footer .p{
     font-size: 13px;
     display: flex;
     justify-content: center;
-    transform: translate(80px, 90px);
+    transform: translate(50px, 90px);
     position: absolute 
   }
   .column-one{
     transform: translate(-130px,200px)
   }
   .column-two{
-    transform: translate(10px,200px)
+    transform: translate(-40px,200px)
   }
   .column-three{
     transform: translate(-385px,450px);
@@ -1232,7 +1232,7 @@ padding-bottom: 100px;
   }
   .rights{
     width: 200px;
-    transform: translate(70px, 700px)
+    transform: translate(100px, 700px)
   }
  
   html, body{
