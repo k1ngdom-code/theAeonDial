@@ -681,6 +681,7 @@ transform: translate(-00px,30px);
   }
   .sidebar{
     display: flex; 
+    position: fixed;
   }
  
   #navitems li{
@@ -698,7 +699,8 @@ transform: translate(-00px,30px);
     border: 1px solid;
     border-radius: 50%;
     background: black;
-    display: block
+    display: block;
+    
   }
   
   .herosection p1{
@@ -899,7 +901,7 @@ transform: translate(-70px,30px);
   }
   
   .logosection{
-    transform: translate(170px,10px) scale(00.9)
+    transform: translate(140px,10px) scale(00.9)
   }
   .logosection #paraspan{
     margin-right:-8px
@@ -915,12 +917,23 @@ transform: translate(-70px,30px);
   }
   
   #paragraphs{
-    transform: translate(70px, 150px);
-    line-height: 10px
+    transform: translate(90px, 150px);
+    line-height: 10px;
+    font-family: Lato;
  
   }
+  #paragraphs p1{
+    font-size: 17px;
+  }
+  #paragraphs p2{
+    font-size: 23px;
+  }
+  #paragraphs p3{
+    font-size: 25px;
+    margin-left: 10px;
+  }
   #firstwatch{
-    transform: translate(-50px, -90px) scale(0.65)
+    transform: translate(-70px, -90px) scale(0.65)
   }
   #paragraphs p2{
     width: 200px;
@@ -960,14 +973,20 @@ transform: translate(-70px,30px);
   }
 
    #one{
-    transform: translate(210px, -1250px);
+    transform: translate(180px, -1250px);
 
   }
- 
+  .specs h4{
+    font-size:19px
+  }
+ .specs p{
+  font-size: 17px;
+ }
   #one h4{
     justify-content: center;
     transform: translate(90px);
-    width: 400px
+    width: 400px;
+
   }
   #one img{
     transform: translate( 130px, 20px) scale(0.5)
@@ -977,7 +996,7 @@ transform: translate(-70px,30px);
     width: 500px
   }
   #two{
-     transform: translate(235px, -1215px);
+     transform: translate(190px, -1215px);
     width: 340px
   }
    #two h4{
@@ -993,7 +1012,7 @@ transform: translate(-70px,30px);
     width: 500px
   }
   #three{
-     transform: translate(190px, -1165px);
+     transform: translate(160px, -1165px);
     
   }
   
@@ -1006,13 +1025,13 @@ transform: translate(-70px,30px);
     transform: translate(210px, 20px) scale(01)
   }
   #three p{
-    transform: translate(-10px);
+    transform: translate(10px);
     width: 500px
   }
   
   #four{
     width: 200px;
-   transform: translate(180px, -720px);
+   transform: translate(150px, -720px);
 
   }
    #four h4{
@@ -1024,13 +1043,13 @@ transform: translate(-70px,30px);
     transform: translate(230px, 20px) scale(01)
   }
   #four p{
-    transform: translate(80px);
+    transform: translate(70px);
     width: 500px
   }
   
   
   #five{
-    transform: translate(150px, -690px)
+    transform: translate(115px, -690px)
   }
   
    #five h4{
@@ -1042,11 +1061,11 @@ transform: translate(-70px,30px);
     transform: translate(230px, 20px) scale(01)
   }
   #five p{
-    transform: translate(90px);
+    transform: translate(75px);
     width: 500px
   }
   #six{
-    transform: translate(180px, -620px);
+    transform: translate(140px, -620px);
 padding-bottom: 100px;
   }
   
@@ -1059,18 +1078,18 @@ padding-bottom: 100px;
     transform: translate( 210px, 20px) scale(01)
   }
   #six p{
-    transform: translate(105px);
+    transform: translate(115px);
     width: 500px
   }
   .specss{
-    padding-bottom: 120px;
+    padding-bottom: 170px;
   }
   #centerimage{
-    transform: translate(-10px, 40px) scale(0.8)
+    transform: translate(-60px, 70px) scale(0.8)
   }
   .featurescard{
-    height: 75vh;
-    margin-top: 50px;
+    height: 81vh;
+    margin-top: 100px;
   }
   .featurescard ul{
    display:grid;
@@ -1079,13 +1098,16 @@ padding-bottom: 100px;
   }
   .featurescard h3{
     width: 400px;
-    margin-left: 40px;
+    margin-left: 20px;
     display: flex;
     justify-content: center;
+    font-size: 25px;
+    font-family: Lato;
   }
   .featurescard p4{
     width: 330px;
     font-size: 15px;
+    margin-left: -20px;
   }
   .products p5{
     width: 400px;
@@ -1099,8 +1121,8 @@ padding-bottom: 100px;
   .displayproducts ul{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    transform: translate(-65px,-20px);
-    gap: 10px;
+    transform: translate(-85px,-20px);
+    gap: 20px;
   }
   .displayproducts li{
     margin-right: -260px;
@@ -1118,10 +1140,14 @@ padding-bottom: 100px;
     margin-left: 0px
   }
   .type{
-    margin-left: 10px;
+    margin-left: 5px;
   }
   .price{
-    margin-left: 5px;
+    margin-left: 0px;
+  }
+  .title{
+    font-family: Inter;
+    font-size:18px ;
   }
   .reviews p{
     border-bottom: 3px solid grey;
@@ -1149,33 +1175,41 @@ padding-bottom: 100px;
   }
   .stores p{
     font-size: 14px;
-    transform:translate(50px);
-    width: 400px
+    transform:translate(30px);
+    width: 390px
   }
   
   .stores button{
-    transform: translate(60px, 100px);
+    transform: translate(40px, 100px);
     width: 160px
       }
   
   .stores #break{
     display: flex;
     position: absolute;
-    transform: translate(0px,20px)
+    transform: translate(10px,20px)
   }
   .footer{
     width: 100%;
     overflow: hidden;
-    height: 100vh
+    height: 110vh
   }
   .footer .footerlogosection{
-  transform:translate(115px) 
+  transform:translate(105px);
+  }
+  .footerlogosection p{
+    font-size: 25px;
+  }
+  .footerlogosection img{
+    margin-top: -10px;
+    scale: 0.90;
+    transform: translate(0px, -5px) scale(0.3);
   }
   .footer .p{
     font-size: 13px;
     display: flex;
     justify-content: center;
-    transform: translate(110px, 90px);
+    transform: translate(80px, 90px);
     position: absolute 
   }
   .column-one{
@@ -1185,7 +1219,8 @@ padding-bottom: 100px;
     transform: translate(10px,200px)
   }
   .column-three{
-    transform: translate(-365px,450px)
+    transform: translate(-385px,450px);
+    margin-bottom: 20px;
   }
   .column-three input{
    min-width: 240px
@@ -1193,11 +1228,11 @@ padding-bottom: 100px;
   
   
   .footer .socials{
-    transform: translate(-60px, 600px) scale(0.6)
+    transform: translate(-60px, 630px) scale(0.6)
   }
   .rights{
     width: 200px;
-    transform: translate(150px, 690px)
+    transform: translate(150px, 700px)
   }
  
   html, body{
