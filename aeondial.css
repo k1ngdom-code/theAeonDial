@@ -1306,11 +1306,12 @@ padding-bottom: 100px;
   .reviews p{
     width:350px;
     font-size:17px;
-    color:red
+    
   }
   .reviews h3{
   width:370px;
-    font-size:18px
+    font-size:18px;
+    color:red
   }
    .logosection{
     transform: translate(110px,10px) scale(00.87)
