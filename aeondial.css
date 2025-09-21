@@ -1361,8 +1361,9 @@ padding-bottom: 100px;
   .featurescard p4{
     width: 330px;
     font-size: 15px;
-    margin-left: -35px;
-    font-family:Inter
+    margin-left: -45px;
+    font-family:Inter;
+    font-weight:200
   }
 }
  /* .featurescard{
