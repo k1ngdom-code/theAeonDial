@@ -1304,11 +1304,12 @@ padding-bottom: 100px;
     transform: translate(-35px,50px)
   }
   .reviews p{
-    width:370px;
+    width:350px;
     font-size:17px
   }
   .reviews h3{
-  width:370px
+  width:370px;
+    font-size:18px
   }
 }
 /*@media(max-width:414px){
