@@ -1317,7 +1317,7 @@ padding-bottom: 100px;
     transform: translate(110px,10px) scale(00.87)
   }
   .reviews p2{
-  color:red
+  width:370px
   }
 }
 /*@media(max-width:414px){
