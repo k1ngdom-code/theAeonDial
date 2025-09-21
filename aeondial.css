@@ -924,6 +924,7 @@ transform: translate(-70px,30px);
   }
   #paragraphs p1{
     font-size: 17px;
+    font-weight:200
   }
   #paragraphs p2{
     font-size: 23px;
@@ -1386,6 +1387,10 @@ padding-bottom: 100px;
   }
    #firstwatch{
     transform: translate(-110px, -90px) scale(0.65)
+  }
+    #paragraphs p3{
+    font-size: 25px;
+    margin-left: 20px;
   }
 }
  /* .featurescard{
