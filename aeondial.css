@@ -969,7 +969,8 @@ transform: translate(-70px,30px);
   }
   .specs{
     scale: 1.2;
-   font-family:Inter
+   font-family:Inter;
+    margin-left:-20px
   }
 
    #one{
@@ -1370,7 +1371,12 @@ padding-bottom: 100px;
   }
   .featurescard{
     height: 81vh;
-    margin-top: 150px;
+    margin-top: 100px;
+  }
+   .specs{
+    scale: 1.2;
+   font-family:Inter;
+    margin-left:-40px
   }
 }
  /* .featurescard{
