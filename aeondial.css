@@ -1325,8 +1325,8 @@ padding-bottom: 100px;
   }
   
   .products p5{
-    font-weight: 100;
-    width: 345px;
+    font-weight: 200;
+    width: 350px;
     font-size: 13px
   }
   .displayproducts .card{
@@ -1342,7 +1342,7 @@ padding-bottom: 100px;
   
   .products p5{
     font-weight: 100;
-    width: 345px;
+    width: 355px;
     font-size: 13px
   }
   .displayproducts .card{
@@ -1365,9 +1365,7 @@ padding-bottom: 100px;
     font-family:Inter;
     font-weight:200
   }
-  .products p5{
-  width:370px
-  }
+ 
 }
  /* .featurescard{
     height: 70vh
