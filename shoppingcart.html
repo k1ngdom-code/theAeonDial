@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="shopping.css">
+</head>
+</html>
+<body>
+
+   <div class="container" id="cont">
+    <!--    <div class="shoppingbox">
+<div class="box">
+<img src="iPhone-11.png" alt="" srcset="">
+<p class="title">Name</p>
+<p class="description">Description</p>
+<p class="price">Price</p>
+<button id="add-to-cart">Add to cart</button>
+</div>
+
+    </div>
+
+ <div class="shoppingbox">
+<div class="box">
+<img src="iPhone-11.png" alt="" srcset="">
+<p class="title">Name</p>
+<p class="description">Description</p>
+<p class="price">Price</p>
+<button id="add-to-cart">Add to cart</button>
+</div>
+
+    </div>
+
+ <div class="shoppingbox">
+<div class="box">
+<img src="iPhone-11.png" alt="" srcset="">
+<p class="title">Name</p>
+<p class="description">Description</p>
+<p class="price">Price</p>
+<button id="add-to-cart">Add to cart</button>
+</div>
+
+    </div>
+
+ <div class="shoppingbox">
+<div class="box">
+<img src="iPhone-11.png" alt="" srcset="">
+<p class="title">Name</p>
+<p class="description">Description</p>
+<p class="price">Price</p>
+<button id="add-to-cart">Add to cart</button>
+</div>
+
+    </div>
+
+ <div class="shoppingbox">
+<div class="box">
+<img src="iPhone-11.png" alt="" srcset="">
+<p class="title">Name</p>
+<p class="description">Description</p>
+<p class="price">Price</p>
+<button id="add-to-cart">Add to cart</button>
+</div>
+
+    </div>
+
+ <div class="shoppingbox">
+<div class="box">
+<img src="iPhone-11.png" alt="" srcset="">
+<p class="title">Name</p>
+<p class="description">Description</p>
+<p class="price">Price</p>
+<button id="add-to-cart">Add to cart</button>
+</div>
+
+    </div>-->
+
+    </div>
+<button class="cart" id="carticon">Cart</button>
+
+   <div class="cart" id="cartsection">
+        <p class="header">Shopping cart</p>
+
+        <a href="#">
+            <p class="home">Back to home</p>
+        </a>
+         <p id="empty">Cart is currently empty. Return to homepage to add an item.</p>
+<ul id="displaybox">
+     <li> <div class="displaysection">
+            <img src="iPhone-11.png" alt="" srcset="">
+            <p2 id="pname" class="texttitle">Title</p2>
+
+            <div class="countitems">
+                <button class="add" id="adding">+</button>
+                <p3 class="counter" id="count">0</p3>
+                <button class="minus" id="subtract">-</button>
+            </div>
+            <p class="pricetag">$<span id="number">10</span><span class="dots">.00</span></p>
+            <button class="" id="deletebtn">Delete<i class="bx-bx-trash"></i></button>
+        </div>
+    </li>
+        </ul>
+
+        <button class="" id="pay">Proceed to checkout <i class="bx-bxs-shopping-bag"></i></button>
+    <button class="" id="close">Close</button>
+    </div>
+
+    <script>
+const container= document.getElementById("cont")
+
+fetch('items.json')
+.then(res => res.json())
+.then(data => {
+    data.forEach(post => {
+        container.insertAdjacentHTML('beforeend', `
+        <li class="remove">
+            <div class="shoppingbox">
+<div class="box">
+<img src=${post.image} alt="" srcset="">
+<p class="title" id="titles">${post.productname}</p>
+<p class="description" id="describe">${post.description}</p>
+<p class='price' id="prices">${post.price}</p>
+<button id="add-to-cart" onclick="addtocart()">Add to cart</button>
+</div>
+
+</div>
+            `)
+    });
+})
+
+
+
+
+
+const closemodal= document.getElementById("close");
+const cartsection= document.getElementById("cartsection")
+const opencart= document.getElementById("carticon")
+
+closemodal.addEventListener("click", function(){
+cartsection.style.display="none"
+})
+opencart.addEventListener("click", function(){
+    cartsection.style.display="block"
+})
+
+const price=[
+    {
+prices: 50
+},
+{
+prices: 29
+},
+{
+prices: 374
+},
+{
+prices: 40
+},
+]
+
+const cart=document.getElementById("cart-section")
+ const getPrice= document.getElementById("prices");
+    const titles=document.getElementById("titles");
+    const description=document.getElementById("describe")
+const counter= document.getElementById("count")
+const ulist= document.getElementById("displaybox")
+
+
+let counternum= 1
+
+let number= document.getElementById("number")
+let pricenumber= number.innerHTML
+
+//For red cart counter
+function updateCount(){
+    counter.innerHTML= counternum
+    number.innerHTML= pricenumber
+}
+
+
+
+const add=document.getElementById("adding")
+const minus= document.getElementById("subtract")
+
+
+add.addEventListener("click", function(){
+   counternum= counternum + 1
+ pricenumber= pricenumber * 2
+
+    updateCount()
+})
+
+minus.addEventListener("click", function(){
+ 
+    counternum= counternum - 1
+    pricenumber= pricenumber / 2
+  
+    updateCount()
+})
+
+const emptymessage=document.getElementById("empty")
+const addToCartbtn=document.getElementById("add-to-cart")
+
+
+function addtocart(){
+
+    let listing=document.createElement("li")
+listing.innerHTML= ` <div class="displaysection">
+            <img src="iPhone-11.png" alt="" srcset="">
+            <p2 id="pname" class="texttitle">Title</p2>
+
+            <div class="countitems">
+                <button class="add" id="adding">+</button>
+                <p3 class="counter" id="count">${counternum}</p3>
+                <button class="minus" id="subtract">-</button>
+            </div>
+            <p class="pricetag">$<span id="number">${price[0].prices}</span><span class="dots">.00</span></p>
+            <button class="" id="deletebtn">Delete<i class="bx-bx-trash"></i></button>
+        </div>
+    `
+    ulist.appendChild(listing)
+    emptymessage.style.color="white"
+
+}
+
+
+const deletebtn= document.getElementById("deletebtn")
+
+deletebtn.addEventListener("click", function(){
+const listing= document.querySelector("li")
+    ulist.removeChild(listing)
+})
+
+
+
+
+
+
+    </script>
+  
+<script src="shopping.js"></script>
+</body>
+

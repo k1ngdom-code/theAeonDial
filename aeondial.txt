@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeon Dial</title>
+    <link rel="stylesheet" href="aeondial.css">
+</head>
+
+<body>
+
+    <!--Navigation Section-->
+    <div class="navigationbar">
+        <div class="logosection">
+            <img src="aeondialimg/waterdrop.png" width="40px" id="logo">
+            <p><span id="paraspan">Aeon</span> Dial</p>
+        </div>
+        <ul id="navitems">
+            <li class="hideonmobile">Home</li>
+            <li class="hideonmobile">Collections</li>
+            <li class="hideonmobile">Watches</li>
+            <li class="hideonmobile">Quick find</li>
+            <li class="hideonmobile">Pages</li>
+        </ul>
+        <button class="contactus">Contact Us</button>
+        <img src="aeondialimg/vecteezy_shopping-cart-icon-vector-design-templates_8133644.jpg" width="70px" id="carticon">
+        <span id="countcartitems">0</span>
+    </div>
+
+    
+<!--Side navigation-->
+    <!--Hero section-->
+
+    <div class="herosection">
+
+        <p1>Be online always and everywhere</p1>
+        <p2>For All Seasons</p2>
+        <p3>Any Circumstances</p3>
+
+        <img id="firstwatch" src="aeondialimg/watchband.png" alt="" class="displaywatches">
+        <img id="secondwatch" src="aeondialimg/watchesdisplay.png" alt="" class="displaywatches">
+
+        <button class="purchase">Buy Now</button>
+        <button class="watchvid"><img src="aeondialimg/play (1).png" width="32px" class="play">Watch Video</button>
+    </div>
+
+    <!--Showing Specs-->
+    <div class="specs">
+
+        <div class="specs" id="one">
+            <img src="aeondialimg/link (1).png" alt="">
+            </img>
+            <h4>Extraordinary Performance</h4>
+            <p>A smart watch is a wearable computer in the form of a watch.</p>
+
+        </div>
+        <div class="specs" id="two">
+            <img src="aeondialimg/battery-charge (1).png" alt="">
+
+            </img>
+            <h4>Healthy battery life</h4>
+            <p>Has excellent battery life to last for your needs.</p>
+        </div>
+        <div class="specs" id="three">
+            <img src="aeondialimg/link (1).png" alt="">
+
+            </img>
+            <h4>Connection to Android and iOS</h4>
+            <p>A smart watch is a wearable computer in the form of a watch.</p>
+
+        </div>
+        <div class="specs" id="four">
+            <img src="aeondialimg/calendar.png" alt="">
+            </img>
+            <h4>Shows time & date</h4>
+            <p>A smart watch is a wearable computer in the form of a watch.</p>
+
+        </div>
+        <div class="specs" id="five">
+            <img src="aeondialimg/money.png" alt="">
+            </img>
+            <h4>Affordable price</h4>
+            <p>A smart watch is a wearable computer in the form of a watch.</p>
+
+
+        </div>
+        <div class="specs" id="six">
+            <img src="aeondialimg/smart-watch.png" alt="">
+            </img>
+            <h4>Best and quality designs</h4>
+            <p>A smart watch is a wearable computer in the form of a watch.</p>
+
+        </div>
+        <img src="aeondialimg/Smartwatch-PNG-Free-Download.png" alt="" id="centerimage">
+
+
+    </div>
+
+    <!--Features card-->
+    <div class="featurescard">
+        <h3>Features</h3>
+        <p>A smart watch is a wearable computer in the form of a watch.
+            Having almost all the features of a mobile device like a phone.
+        </p>
+
+        <ul class="featureslist">
+            <li>
+                <p>Water proof</p><img src="aeondialimg/waterdrop.png" alt="">
+            </li>
+            <li>
+                <p>Battery life</p><img src="aeondialimg/battery-charge.png" alt="">
+            </li>
+            <li>
+                <p>Alarm</p><img src="aeondialimg/alarm.png" alt="">
+            </li>
+            <li>
+                <p>Weather</p><img src="aeondialimg/cloudy.png" alt="">
+            </li>
+        </ul>
+    </div>
+
+    <!--Products-->
+    <div class="products">
+        <h3>Apple Watch <span id="blue">Products</span></h3>
+        <p>A smart watch is a wearable computer in the form of a watch.
+            Having almost all the features of a mobile device like a phone.
+        </p>
+
+        <div class="displayproducts">
+            <ul>
+                <li>
+                    <div class="card">
+                        <img src="aeondialimg/smartwatch1.jpg" alt="">
+                        <p class="title">Carbon black watch</p>
+                        <p class="type">Modern</p>
+                        <p class="price">$514</p>
+                        <button id="addtocart"><img src="aeondialimg/231_-_1_-_Cart.jpg" width="32px">Add to
+                            cart</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="aeondialimg/smartwatch6.jpg" alt="">
+                        <p class="title">Carbon black watch</p>
+                        <p class="type">Modern</p>
+                        <p class="price">$514</p>
+                        <button id="addtocart"><img src="aeondialimg/231_-_1_-_Cart.jpg" width="32px">Add to
+                            cart</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="aeondialimg/smartwatch4.jpg" alt="">
+                        <p class="title">Carbon black watch</p>
+                        <p class="type">Modern</p>
+                        <p class="price">$514</p>
+                        <button id="addtocart"><img src="aeondialimg/231_-_1_-_Cart.jpg" width="32px">Add to
+                            cart</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="aeondialimg/smartwatch5.jpg" alt="">
+                        <p class="title">Carbon black watch</p>
+                        <p class="type">Modern</p>
+                        <p class="price">$514</p>
+                        <button id="addtocart"><img src="aeondialimg/231_-_1_-_Cart.jpg" width="32px">Add to
+                            cart</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Reviews-->
+    <div class="reviews">
+        <p>Reviews</p>
+        <h3>What an amazing watch at an affordable price.</h3>
+        <p2>"
+            >A smart watch is a wearable computer in the form of a watch.
+            Having almost all the features of a mobile device like a phone.
+
+            "</p2>
+        <section>
+            <img src="aeondialimg/user-3296.png" alt="">
+            <span>Charlie Whites</span>
+            <p>Therapist</p>
+        </section>
+        <img src="aeondialimg/watchpreview.jpg" alt="" id="person">
+        <img src="aeondialimg/smartwatch2.jpg" alt="" id="thewatch">
+    </div>
+
+<!--Stores-->
+<div class="stores">
+    <h3>Nearby Stores</h3>
+    <p>c:\Users\admin\Documents\PAYZEN\payzen img\user-3296.png
+        c:\Users\admin\Documents\PAYZEN\payzen img\user-3296.png
+    </p>
+    <button class="buy">Purchase</button>
+    <button class="places"><img src="aeondialimg/vecteezy_outline-map-pointer-icon-isolated-gps-location-symbol-black_57791098.jpg" width="60px">Find nearby stores</button>
+</div>
+
+<!--Footer-->
+
+<div class="footer">
+   <div class="footerlogosection">
+            <img src="aeondialimg/waterdrop.png" alt="" id="footerlogo">
+            <p><span id="footer-paraspan">Aeon</span> Dial</p>
+        </div>
+    
+    <p>c:\Users\admin\Documents\PAYZEN\payzen img\user-3296.png
+        c:\Users\admin\Documents\PAYZEN\payzen img\user-3296.png
+   </p>
+
+   <ul class="socials">
+    <li><img src="aeondialimg/facebook.png" alt=""></li>
+    <li><img src="aeondialimg/x.jpg" width="40px"></li>
+    <li><img src="aeondialimg/instagram.png" alt=""></li>
+   </ul>
+
+   <ul class="column-one">
+    <li class="head1">Menu</li>
+    <li>Home</li>
+    <li>Collections</li>
+    <li>Books</li>
+    <li>Categories</li>
+   </ul>
+
+   <ul class="column-two">
+    <li class="head2">Support</li>
+   <li>FAQs</li>
+   <li>Terms & conditions</li>
+   <li>Privacy Policy</li>
+   <li>Report</li>
+   </ul>
+
+   <ul class="column-three">
+    <li class="head3">Stay connected</li>
+    <li><input type="text" placeholder="Email address"></li>
+    <li><button id="subscribe">Subscribe</button></li>
+   </ul>
+    </div>
+
+    <p class="rights">All rights reserved. 2025</p>
+    <script src="aeondial.js"></script>
+</body>
+
+</html>

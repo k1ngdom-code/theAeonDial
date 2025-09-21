@@ -1,0 +1,261 @@
+.shoppingbox{
+border:px solid;
+width:372px;
+margin-bottom: 20px;
+border-radius: 20px;
+box-shadow: 1px 2px 10px 1px;
+transform: scale(0.9);
+
+
+}
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:50px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.shoppingbox img{
+    border-bottom: 2px solid orange;
+
+}
+
+.title,.description{
+font-family: garamond;
+font-size: 20px;
+
+}
+.price{
+    font-family:sans-serif;
+    font-weight: 600;
+}
+
+.title,.description,.price{
+    margin-left:20px
+}
+
+.shoppingbox button{
+ transform: translateX(150px) translatey(-10px);
+width: 100px;
+padding:5px;
+border:1px solid orange;
+background-color: white;;
+transition: 0.3s ease;
+font-weight: 600;
+font-family: 'Courier New', Courier, monospace;
+}
+.shoppingbox button:hover{
+    background-color: orange;
+    color:white
+}
+.title{
+font-weight: 600;
+}
+
+#carticon{
+    display:flex;
+    position: absolute;
+    transform: translateX(00px) translateY(-1200px);
+    padding: 5px;
+    width: 100px;
+    justify-content: center;
+    font-size: 20px;
+    border:2px solid orange;
+    border-radius: 5px;
+    background-color: white;
+    font-family: garamond;
+    font-weight: 600;
+    transition: 0.35s ease;
+    position: fixed;
+}
+#carticon:hover{
+    color:white;
+    background-color: orange;
+}
+
+.displaysection{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    height: 260px;
+    box-shadow: 1px 2px 5px;
+    border-radius: 20px;
+    width:600px;
+    transform: translateX(-40px);
+    
+}
+.displaysection img{
+    scale:0.7;
+    padding: 0px;
+    border: 2px solid orange;
+    border-radius: 50px;
+    width:300px;
+   margin-right:20px
+}
+
+
+.texttitle{
+    font-size: 19px;
+    font-weight: 200;
+  
+}
+
+
+
+
+.countitems{
+    gap: 10px;
+    display: flex;
+}
+.countitems p3{
+    font-size: 19px;
+    font-family: arial;
+}
+
+.countitems button{
+    background: white;
+    border: 1px solid orange;
+    border-radius: 4px;
+    width: 30px;
+    transition: 0.2s ease;
+}
+
+.countitems button:hover{
+    color: white;
+    background: orange
+}
+
+
+
+.pricetag {
+    font-family: garamond;
+    font-size: 20px;
+    
+}
+
+.header{
+    font-family: New Times Roman;
+    font-size: 30px;
+    font-weight: 300;
+  border-bottom: 5px solid orange;
+border-radius: 10px;
+}
+
+
+.home{
+    display: flex;
+    justify-content: right;
+    transform:translateY(-60px);
+    text-decoration: none;
+}
+
+#deletebtn{
+    scale:0.9;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    font-weight: 600;
+    transition: 0.2s
+}
+#pay{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    transition: 0.2s ease;
+    border: none;
+    border-radius: 5px;
+    background: orange;
+    transform:translateY(20px);
+    font-size: 20px;
+    font-family: garamond;
+    font-weight: 600;
+    margin-top: 60px;
+}
+
+#close{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    transition: 0.2s ease;
+    border: none;
+    border-radius: 5px;
+color:red;
+    transform:translateY(30px);
+    font-size: 20px;
+    font-family: garamond;
+    font-weight: 600
+}
+
+#close:hover{
+    color: red;
+}
+
+ul li {
+display: block;
+margin-bottom: 40px;
+}
+
+#cartsection{
+    width:600px;
+    box-shadow: 1px 2px 5px ;
+    border-radius: 10px;
+    border:1px solid orange;
+    max-height: 800px;
+    height: 560px;
+    padding: 20px;
+    scale: 0.9;
+    //transform:translateX(800px) ;
+    top:0;
+    transition: 0.3s ease;
+    z-index: 1;
+    background-color: white;
+   // display: none;
+    position: fixed;
+    overflow-y: scroll;
+}
+
+.texttitle,.pricetag,.countitems,#deletebtn{
+    transform:translateX(-70px);
+    display: flex;
+}
+
+ html,body{
+    width:100%;
+    margin:0;
+    padding:0;
+   overflow-x: hidden
+  }
+ 
+.remove{
+    display: block;
+}
+#empty{
+    
+font-size: 20px;
+justify-content: center;
+color:rgb(202, 134, 7);
+transform: translateX(40px);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="aeondial.css">
+    <link rel="stylesheet" href="cart.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+    <!--Navigation Section-->
+    <div class="navigationbar">
+        <div class="logosection">
+            <img src="aeondialimg/waterdrop.png" width="40px" id="logo">
+            <p><span id="paraspan">Aeon</span> Dial</p>
+        </div>
+        <img src="aeondialimg/menu.jpg" width="40px" id="menu">
+        <ul id="navitems">
+            <li class="hideonmobile">Home</li>
+            <li class="hideonmobile">Collections</li>
+            <li class="hideonmobile">Watches</li>
+            <li class="hideonmobile">Quick find</li>
+            <li class="hideonmobile">Pages</li>
+               </ul>
+               
+        <button class="contactus">Contact Us</button>
+        <img src="aeondialimg/vecteezy_shopping-cart-icon-vector-design-templates_8133644.jpg" width="70px"
+            id="carticon" onclick="window.location.href='cart.html'">
+        <span id="countcartitems" style="display:none">0</span>
+
+    </div>
+<!--Side navigation-->
+<div id="sidenav">
+<div class="sidebar" id="side">
+    <span id="x">+</span>
+     <ul id="sidebar-items">
+            <li class="white" onclick="window.location.href='index.html'">Home</li>
+            <li class="white" onclick="window.location.href='index.html'">Collections</li>
+            <li>Watches</li>
+            <li>Quick find</li>
+            <li>Pages</li>
+        </ul>
+
+        <ul id="sidesocial">
+             <li><img src="aeondialimg/facebook.png" alt=""></li>
+            <li><img src="aeondialimg/x.jpg" width="60px"></li>
+            <li><img src="aeondialimg/instagram.png" alt=""></li>
+        </ul>
+</div>
+</div>
+
+
+   <h5>My Cart</h5>
+   <div id="cartitems">
+
+   </div>
+   <div id="checkoutdiv">
+<button class="proceed">Proceed to Checkout</button>
+<button id="emptycart">Clear cart</button>
+</div>
+
+<!--Footer-->
+    <div class="footer">
+        <div class="footerlogosection">
+            <img src="aeondialimg/waterdrop.png" alt="" id="footerlogo">
+            <p><span id="footer-paraspan">Aeon</span> Dial</p>
+        </div>
+
+        <p class="p">We deliver quality with precision and reliability.</p>
+
+        <ul class="socials">
+            <li><img src="aeondialimg/facebook.png" alt=""></li>
+            <li><img src="aeondialimg/x.jpg" width="60px"></li>
+            <li><img src="aeondialimg/instagram.png" alt=""></li>
+        </ul>
+
+        <ul class="column-one">
+            <li id="head1">Menu</li>
+            <li>Home</li>
+            <li>Collections</li>
+            <li>Books</li>
+            <li>Categories</li>
+        </ul>
+
+        <ul class="column-two">
+            <li id="head2">Support</li>
+            <li>FAQs</li>
+            <li>Terms & conditions</li>
+            <li>Privacy Policy</li>
+            <li>Report</li>
+        </ul>
+
+        <ul class="column-three">
+            <li id="head3">Stay connected</li>
+            <li><input type="text" placeholder="Email address"></li>
+            <li><button id="subscribe">Subscribe</button></li>
+        </ul>
+
+        <p class="rights">All rights reserved. 2025</p>
+
+    </div>
+    <script src="aeondial.js"></script>
+  <script>
+// for sidebar menu
+   const sidebar= document.getElementById("sidenav")
+   const openMenu= document.getElementById("menu")
+   const closeMenu= document.getElementById("x")
+
+   openMenu.addEventListener("click", function(){
+  sidebar.style.transform="translate(10px)"
+})
+closeMenu.addEventListener("click", function(){
+  sidebar.style.transform="translate(310px)"
+})
+
+    //Load cart from local storage
+    const cart= JSON.parse(localStorage.getItem("cart")) || []
+    const cartContainer= document.getElementById("cartitems")
+    const total= document.getElementById("total")
+
+   if(cart){
+     cart.forEach(item => {
+            const div= document.createElement("div")
+            div.classList.add('cartitem')
+            div.innerHTML=
+            `<div class="itembox"> 
+            <img width = "40px" src= ${item.image}></img>
+            <p>${item.name} - $${item.price.toFixed(2)}</p>
+          <div class="control">
+    <div class="number-control">
+        <button class="decreasebtn">-</button>
+        <span class="numberdisplay">${item.qty}</span>
+        <button class="increasebtn">+</button>
+        <span style="display:none" class="baseprice">${item.price.toFixed(2)}</span>
+        <div class="totalprice"><span class="sub">Sub-total:</span>$${item.price.toFixed(2)}</div>
+    </div>
+</div>
+<span class= "close">+</span>
+</div>
+            `
+            cartContainer.appendChild(div)
+            
+ document.querySelectorAll(".cartitem").forEach(deletebtn =>{
+   const deleteitem = deletebtn.querySelector(".close")
+   const oneitem= document.querySelector('.cartitem')
+
+    deleteitem.addEventListener("click", function(){
+    
+        oneitem.innerHTML=''
+    
+ })
+
+        })
+ })
+   }else{
+    let innerHTMLOfCart= '<p>Your cart is empty. Kindly go to the hompage to get started.</p>'
+    cartContainer.innerHTML= innerHTMLOfCart
+   }
+       
+       
+
+        //Loop through the cart and display the items
+       /* cart.forEach(item => {
+            const div= document.createElement("div")
+            div.classList.add('cartitem')
+            div.innerHTML=
+            `<div class="itembox"> 
+            <img width = "40px" src= ${item.image}></img>
+            <p>${item.name} - $${item.price.toFixed(2)}</p>
+          <div class="control">
+    <div class="number-control">
+        <button class="decreasebtn">-</button>
+        <span class="numberdisplay">${item.qty}</span>
+        <button class="increasebtn">+</button>
+        <span style="display:none" class="baseprice">${item.price.toFixed(2)}</span>
+        <div class="totalprice"><span class="sub">Sub-total:</span>$${item.price.toFixed(2)}</div>
+    </div>
+</div>
+<span class= "close">+</span>
+</div>
+            `
+            cartContainer.appendChild(div)
+            
+ document.querySelectorAll(".cartitem").forEach(deletebtn =>{
+   const deleteitem = deletebtn.querySelector(".close")
+   const oneitem= document.querySelector('.cartitem')
+
+    deleteitem.addEventListener("click", function(){
+    
+        oneitem.innerHTML=''
+    
+ })
+
+        })
+ })
+ */
+ document.addEventListener("DOMContentLoaded", function(){
+     const pricedisplay = control.querySelector(".baseprice")
+           
+})
+       const emptycart= document.getElementById("emptycart")
+ emptycart.addEventListener("click", empty)
+ function empty(){
+    document.querySelector('.cartitem').innerHTML=''
+    localStorage.removeItem("cart") || localStorage.clear()
+    window.location.href="cart.html"
+ }
+
+    
+  </script>
+  <script src="cart.js"></script>
+</body>
+</html>

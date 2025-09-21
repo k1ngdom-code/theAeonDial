@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<div class="control">
+    <div class="number-control">
+        <button class="decreasebtn">-</button>
+        <span class="numberdisplay">1</span>
+        <button class="increasebtn">+</button>
+        <span class="baseprice">2</span>:::
+         <span class="totalprice">2</span>
+    </div>
+</div>
+
+<div class="control">
+    <div class="number-control">
+        <button class="decreasebtn">-</button>
+        <span class="numberdisplay">1</span>
+        <button class="increasebtn">+</button>
+        <span class="baseprice">3</span>:::
+         <span class="totalprice">3</span>
+    </div>
+</div>
+
+<div class="control">
+    <div class="number-control">
+        <button class="decreasebtn">-</button>
+        <span class="numberdisplay">1</span>
+        <button class="increasebtn">+</button>
+        <span class="baseprice">4</span>:::
+        <span class="totalprice">4</span>
+    </div>
+</div>
+
+<div class="total">
+    <h3>Total</h3><span id="total">0</span>
+</div>
+    <script>
+        const totalgranddisplay =document.getElementById("total")
+        let grandtotal= 0
+function updateGrandTotal(){
+    
+    document.querySelectorAll(".control").forEach(control => {
+        const totalPrice = parseInt(control.querySelector(".totalprice").textContent)
+        grandtotal += totalPrice
+    });
+    totalgranddisplay.textContent= grandtotal
+}
+
+console.log(totalgranddisplay.innerHTML)
+        document.querySelectorAll(".number-control").forEach(control => {
+            const decreasebtn = control.querySelector(".decreasebtn")
+            const increasebtn = control.querySelector(".increasebtn")
+            const pricedisplay = control.querySelector(".baseprice")
+            const quantitydisplay = control.querySelector(".numberdisplay")
+            const totalpricedisplay= control.querySelector(".totalprice")
+
+        
+            const baseprice = parseInt(pricedisplay.textContent)
+           let quantity = 1
+           const updateDisplay= () =>{
+            quantitydisplay.textContent = quantity
+           const totalprice= quantity * baseprice
+            totalpricedisplay.textContent = totalprice
+            updateGrandTotal()
+           }
+            decreasebtn.addEventListener("click", function () {
+                if (quantity > 1) {
+                    quantity--
+                    updateDisplay()
+
+                }
+            })
+            increasebtn.addEventListener("click", function () {
+                quantity++
+                updateDisplay()
+            })
+        })
+
+
+
+updateGrandTotal()
+
+
+        /*
+         document.querySelectorAll(".number-control").forEach(control => {
+                    const quantitydisplay = control.querySelector(".numberdisplay")
+                    const decreasebtn= control.querySelector(".decreasebtn")
+                   const increasebtn= control.querySelector(".increasebtn")
+                     const pricedisplay=control.querySelector(".amount")
+                   
+                     let value = 1
+                   const incremnetVal= parseInt(pricedisplay.textContent)
+                   let currentcount= parseInt(quantitydisplay.textContent)
+        
+                     decreasebtn.addEventListener("click", function(){
+                        if(value > 1){
+                        value--;
+                        quantitydisplay.textContent= value
+                        
+                        }
+                     })
+        increasebtn.addEventListener("click", function(){
+                        value++
+                        quantitydisplay.textContent= value
+                      
+                     })
+                })
+        */
+
+
+    </script>
+
+</body>
+
+</html>
