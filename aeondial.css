@@ -1187,7 +1187,7 @@ padding-bottom: 100px;
   .stores #break{
     display: flex;
     position: absolute;
-    transform: translate(10px,20px)
+    transform: translate(10px,60px)
   }
   .footer{
     width: 100%;
@@ -1279,6 +1279,24 @@ padding-bottom: 100px;
 @media(max-width:360px){
   .rights{
      transform: translate(80px, 700px)
+}
+  .stores p{
+    font-size: 14px;
+    transform:translate(30px);
+    width: 390px
+  }
+  
+  .stores button{
+     width: 170px;
+    margin-top: 20px;
+    transform: translate(100px, 50px);
+  }
+  
+  .stores #break{
+    display: flex;
+    position: absolute;
+    transform: translate(10px,50px)
+  }
 }
 /*@media(max-width:414px){
  
