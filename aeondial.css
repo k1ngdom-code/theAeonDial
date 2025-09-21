@@ -1350,6 +1350,20 @@ padding-bottom: 100px;
     scale: 0.52;
     margin-top: -40px
   }
+   .featurescard h3{
+    width: 400px;
+    margin-left: -20px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Lato;
+  }
+  .featurescard p4{
+    width: 330px;
+    font-size: 15px;
+    margin-left: -35px;
+    font-family:Inter
+  }
 }
  /* .featurescard{
     height: 70vh
