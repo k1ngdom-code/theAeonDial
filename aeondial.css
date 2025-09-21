@@ -1311,10 +1311,13 @@ padding-bottom: 100px;
   .reviews h3{
   width:370px;
     font-size:18px;
-    color:red
+    
   }
    .logosection{
     transform: translate(110px,10px) scale(00.87)
+  }
+  .reviews p2{
+  color:red
   }
 }
 /*@media(max-width:414px){
