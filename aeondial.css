@@ -917,7 +917,7 @@ transform: translate(-70px,30px);
   }
   
   #paragraphs{
-    transform: translate(90px, 150px);
+    transform: translate(50px, 150px);
     line-height: 10px;
     font-family: Lato;
  
@@ -1377,6 +1377,12 @@ padding-bottom: 100px;
     scale: 1.2;
    font-family:Inter;
     margin-left:-40px
+  }
+    #paragraphs{
+    transform: translate(20px, 150px);
+    line-height: 10px;
+    font-family: Lato;
+ 
   }
 }
  /* .featurescard{
