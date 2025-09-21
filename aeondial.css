@@ -1295,7 +1295,7 @@ padding-bottom: 100px;
   .stores #break{
     display: flex;
     position: absolute;
-    transform: translate(-15px,50px)
+    transform: translate(-28px,50px)
   }
 }
 /*@media(max-width:414px){
