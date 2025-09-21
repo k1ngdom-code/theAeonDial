@@ -1187,7 +1187,7 @@ padding-bottom: 100px;
   .stores #break{
     display: flex;
     position: absolute;
-    transform: translate(10px,60px)
+    transform: translate(-15px,60px)
   }
   .footer{
     width: 100%;
