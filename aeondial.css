@@ -1336,6 +1336,16 @@ padding-bottom: 100px;
     scale: 0.56;
     margin-top: -40px
   }
+#four{
+   transform: translate(135px, -720px);
+
+}
+#five{
+   transform: translate(90px, -690px);
+}
+  #six h4{
+    transform:translate(120px)
+  }
 }
 @media(max-width:375px){
   .products h3{
@@ -1368,7 +1378,7 @@ padding-bottom: 100px;
     font-weight:200
   }
   .specss{
-    padding-bottom: 350px;
+    padding-bottom: 370px;
   }
   .featurescard{
     height: 81vh;
@@ -1407,7 +1417,7 @@ padding-bottom: 100px;
 }
 
   #centerimage{
-    transform: translate(-120px, 180px) scale(0.8)
+    transform: translate(-160px, 180px) scale(0.8)
   }
 
   
