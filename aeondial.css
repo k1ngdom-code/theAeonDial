@@ -924,7 +924,7 @@ transform: translate(-70px,30px);
   }
   #paragraphs p1{
     font-size: 17px;
-    font-weight:200
+    font-weight:400
   }
   #paragraphs p2{
     font-size: 23px;
@@ -986,7 +986,7 @@ transform: translate(-70px,30px);
  }
   #one h4{
     justify-content: center;
-    transform: translate(90px);
+    transform: translate(70px);
     width: 400px;
 
   }
@@ -1007,14 +1007,14 @@ transform: translate(-70px,30px);
     width: 400px
   }
   #two img{
-    transform: translate( 160px, 20px) scale(01)
+    transform: translate( 180px, 20px) scale(01)
   }
   #two p{
     transform: translate(10px);
     width: 500px
   }
   #three{
-     transform: translate(160px, -1165px);
+     transform: translate(135px, -1165px);
     
   }
   
@@ -1024,7 +1024,7 @@ transform: translate(-70px,30px);
     width: 400px
   }
   #three img{
-    transform: translate(210px, 20px) scale(01)
+    transform: translate(190px, 20px) scale(01)
   }
   #three p{
     transform: translate(10px);
@@ -1051,12 +1051,12 @@ transform: translate(-70px,30px);
   
   
   #five{
-    transform: translate(115px, -690px)
+    transform: translate(105px, -690px)
   }
   
    #five h4{
     justify-content: center;
-    transform: translate(180px);
+    transform: translate(160px);
     width: 400px
   }
   #five img{
@@ -1067,20 +1067,20 @@ transform: translate(-70px,30px);
     width: 500px
   }
   #six{
-    transform: translate(140px, -620px);
+    transform: translate(133px, -620px);
 padding-bottom: 100px;
   }
   
    #six h4{
     justify-content: center;
-    transform: translate(130px);
+    transform: translate(140px);
     width: 400px
   }
   #six img{
-    transform: translate( 210px, 20px) scale(01)
+    transform: translate( 190px, 20px) scale(01)
   }
   #six p{
-    transform: translate(115px);
+    transform: translate(105px);
     width: 500px
   }
   .specss{
