@@ -1392,6 +1392,25 @@ padding-bottom: 100px;
     font-size: 25px;
     margin-left: 20px;
   }
+
+#one p{
+  width:450px
+}
+  #two  p{
+    transform: translate(0px);
+  }
+#three{
+   transform: translate(125px, -1165px);
+}
+#three h4{
+  transform:translate(65px)
+}
+
+  #centerimage{
+    transform: translate(-60px, 180px) scale(0.8)
+  }
+
+  
 }
  /* .featurescard{
     height: 70vh
