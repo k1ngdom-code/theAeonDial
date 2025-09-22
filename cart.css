@@ -172,6 +172,10 @@ display:flex
  .itembox .baseprice{
     font-weight:200
  }
+    h5{
+        font-size:25px;
+        font-family:Inter
+    }
 }
 @media(max-width:375px){
     .itembox img{
