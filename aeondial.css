@@ -995,7 +995,7 @@ transform: translate(-70px,30px);
   }
   #one p{
     transform: translate(-20px);
-    width: 500px
+    width: 480px
   }
   #two{
      transform: translate(190px, -1215px);
@@ -1024,11 +1024,11 @@ transform: translate(-70px,30px);
     width: 400px
   }
   #three img{
-    transform: translate(190px, 20px) scale(01)
+    transform: translate(205px, 20px) scale(01)
   }
   #three p{
     transform: translate(10px);
-    width: 500px
+    width: 490px
   }
   
   #four{
