@@ -1118,7 +1118,8 @@ padding-bottom: 100px;
     transform: translate(20px)
   }
   .products h3{
-    width: 100%
+    width: 100%;
+    font-family:Inter
   }
   .displayproducts ul{
     display: grid;
@@ -1327,8 +1328,8 @@ padding-bottom: 100px;
   }
   
   .products p5{
-    font-weight: 200;
-    width: 340px;
+    font-weight: 400;
+    width: 330px;
     font-size: 13px
   }
   .displayproducts .card{
@@ -1354,7 +1355,7 @@ padding-bottom: 100px;
   
   .products p5{
     font-weight: 100;
-    width: 355px;
+    width: 345px;
     font-size: 13px
   }
   .displayproducts .card{
@@ -1420,7 +1421,7 @@ padding-bottom: 100px;
     transform: translate(-160px, 180px) scale(0.8)
   }
 
-  
+ 
 }
  /* .featurescard{
     height: 70vh
