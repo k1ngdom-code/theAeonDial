@@ -126,11 +126,7 @@
                 sidebar.style.transform = "translate(310px)"
             })
 
-            const navbar = document.querySelector(".navigationbar")
-            navbar.addEventListener("click", function () {
-                sidebar.style.transform = "translate(0px)"
-            })
-
+           
             //Load cart from local storage
             const cart = JSON.parse(localStorage.getItem("cart")) || []
             const cartContainer = document.getElementById("cartitems")
@@ -150,7 +146,7 @@
         <span class="numberdisplay">${item.qty}</span>
         <button class="increasebtn">+</button>
         <span style="display:none" class="baseprice">${item.price.toFixed(2)}</span>
-        <div class="totalprice"><span class="sub">Sub-total:</span>$${item.price.toFixed(2)}</div>
+        <div class="totalprice"><span class="sub">Sub-total:</span>   $${item.price.toFixed(2)}</div>
     </div>
 </div>
 <span class= "close">+</span>
@@ -230,3 +226,4 @@
     </body>
 
 </html>
+
