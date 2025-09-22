@@ -17,34 +17,26 @@ const existingitem= cart.find(item => item.name === productName)
 if(existingitem){
     existingitem.qty += 1
      counter = counter + 1
-     localStorage.setItem("showcount", counter )
-window.addEventListener("load" , function(){
-    
-   
-        cartcount.innerHTML= localStorage.getItem("showcount")
-    
-})  
-    
+     localStorage.setItem("showcount", counter)
+ cartCount() 
 }
 else{
     cart.push({name : productName, price: price, qty: 1, image: image})
    counter = counter + 1
     localStorage.setItem("showcount", counter )
-window.addEventListener("load" , function(){
-   
-    
-        cartcount.innerHTML=  localStorage.getItem("showcount")
-    
-})  
    cartCount()
 }
 //save updated cart back to localstorage
 localStorage.setItem("cart", JSON.stringify(cart))
                                                                                                                                                                                                                                                    
 //alert user on successful update
-alert(`${productName}` + " " + "added successfully!")
+alert(`${productName}` + " " + "has been added successfully!")
 
 }
-cartCount()
+window.addEventListener("load" , function(){
+        const countval= localStorage.getItem("showcount")
+    cartcount.innerHTML= countval
+}) 
+
 
 
