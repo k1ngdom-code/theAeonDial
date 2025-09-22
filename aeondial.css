@@ -1020,11 +1020,11 @@ transform: translate(-70px,30px);
   
    #three h4{
     justify-content: center;
-    transform: translate(80px);
+    transform: translate(70px);
     width: 400px
   }
   #three img{
-    transform: translate(205px, 20px) scale(01)
+    transform: translate(215px, 20px) scale(0.96)
   }
   #three p{
     transform: translate(10px);
