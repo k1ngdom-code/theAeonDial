@@ -1073,11 +1073,11 @@ padding-bottom: 100px;
   
    #six h4{
     justify-content: center;
-    transform: translate(140px);
+    transform: translate(130px);
     width: 400px
   }
   #six img{
-    transform: translate( 190px, 20px) scale(01)
+    transform: translate( 210px, 20px) scale(01)
   }
   #six p{
     transform: translate(105px);
@@ -1087,7 +1087,7 @@ padding-bottom: 100px;
     padding-bottom: 250px;
   }
   #centerimage{
-    transform: translate(-60px, 110px) scale(0.8)
+    transform: translate(-60px, 180px) scale(0.8)
   }
   .featurescard{
     height: 81vh;
