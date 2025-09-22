@@ -1028,8 +1028,7 @@ transform: translate(-70px,30px);
   }
   #three p{
     transform: translate(10px);
-    width: 460px;
-    color:red
+    width: 400px
   }
   
   #four{
